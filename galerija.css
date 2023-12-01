@@ -1,0 +1,288 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0;
+    overflow-x: hidden;
+    color: white; 
+  
+  }
+  
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #cbcbcb;
+    background-size: cover;
+    filter: blur(3px); 
+    z-index: -1;
+  }
+  .home {
+    position: relative;
+    height: 50em;
+}
+
+.home::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('biljka_ponavljajuca.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+    filter: blur(3px);
+    z-index: -1;
+}
+
+.home .home_div {
+    position: relative;
+    padding: 10em;
+    z-index: 1;
+}
+.shop{
+  background-color: #112b22;
+}
+.section{
+  width: 100%;
+}
+  .navbar {
+    height: 5%;
+    position: relative;
+    z-index: 5;
+    background-color: #000000;
+    background: #183028;
+  }
+  
+  .right-section {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .right-section a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #cbcbcb57;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #787878;
+    outline: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 5;
+    right: 0;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  div.gallery {
+    padding: 50px;
+    border-radius: 3%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    background-color: #112b224b;
+    filter: blur(3%);
+    padding: 0 6px;
+    float:left;
+    width: 19.999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .empty-space {
+    position: relative;
+    background-image: url(biljka_ponavljajuca.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    filter: blur(2px);
+    clear: both;
+    height: 150px;
+    width: 100%;
+    margin-top: 6px; 
+}
+
+  footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10em;
+    text-align: center;
+    padding: 1em;
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
+
+  footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4em;
+    text-align: center;
+    padding: 10em;
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
+  
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #cbcbcb; 
+    color: black;
+  }
+  
+  #footer-left,
+  #footer-center,
+  #footer-right {
+    flex: 1;
+  }
+  
+  .mb-10 {
+    margin-bottom: 10px;
+  }
+  
+  .txt-center {
+    text-align: center;
+  }
+  
+  .txt-right {
+    text-align: right;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+.gallery .buy-button {
+
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #cbcbcb;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+.centered-text {
+  position: absolute;
+  padding: 1em;
+  background-color: #183028;
+  top: 7em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3em; /* Adjust the font size as needed */
+  color: #cbcbcb; /* Text color */
+  box-sizing: border-box;
+  border-radius: 2%;
+}
+/*socijalne*/
+
+.fa {
+  font-size: 1px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+.fa-twitter {
+  color: black;
+}
